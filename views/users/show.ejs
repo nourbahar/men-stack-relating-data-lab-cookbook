@@ -6,10 +6,10 @@
   <title><%= user.username %>'s Pantry</title>
 </head>
 <body>
-  <%- include('../partials/_navbar.ejs') %>
+  
   <h1><%= user.username %>'s Pantry</h1>
   <ul>
-    <% user.pantry.forEach(food => { %>
+    <% user.foods.forEach(food => { %>
       <li><%= food.name %></li>
     <% }) %>
   </ul>
